@@ -1,0 +1,147 @@
+.app {
+  width: min(760px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.hero {
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  color: #475569;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+h1 {
+  margin: 12px 0;
+  color: #0f172a;
+  font-size: clamp(2.4rem, 7vw, 4rem);
+  line-height: 1.1;
+}
+
+h2 {
+  margin-top: 0;
+  color: #0f172a;
+}
+
+.hero p,
+.demo-card > p,
+.steps-card {
+  color: #475569;
+  line-height: 1.6;
+}
+
+.demo-card,
+.steps-card {
+  margin-top: 20px;
+  padding: 24px;
+  border: 1px solid #dbe2ea;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 24px #0f172a0a;
+}
+
+button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  background: #2563eb;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.status {
+  min-height: 1.5em;
+  margin-bottom: 0;
+  color: #475569;
+}
+
+.customer-list {
+  padding-left: 22px;
+  color: #0f172a;
+}
+
+.customer-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 8px 0;
+}
+
+.remove-button {
+  padding: 6px 10px;
+  color: #1e293b;
+  background: #e2e8f0;
+  font-size: 0.875rem;
+}
+
+.remove-button:hover:not(:disabled) {
+  background: #cbd5e1;
+}
+
+.learning-note {
+  margin-top: 20px;
+  padding: 12px;
+  border-left: 3px solid #2563eb;
+  background: #eff6ff;
+  color: #1e3a8a;
+  line-height: 1.6;
+}
+
+.steps-card ol {
+  padding-left: 22px;
+}
+
+.pwa-prompt {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 14px 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 8px 30px #0f172a22;
+}
+
+.pwa-prompt span {
+  flex: 1 1 220px;
+}
+
+.pwa-prompt .secondary {
+  color: #1e293b;
+  background: #e2e8f0;
+}
+
+@media (max-width: 520px) {
+  .app {
+    padding-top: 40px;
+  }
+
+  .demo-card,
+  .steps-card {
+    padding: 18px;
+  }
+}
